@@ -1,1 +1,1 @@
-browserify js/index.js -t babelify --outfile public/js/bundle.js
+browserify js/index.js -t babelify --outfile roztocze/js/bundle.js

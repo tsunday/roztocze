@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Overlock&subset=latin-ext');
+
+html {
+    height: 100%;
+}
+
+$bg: #fff;
+$font: 'Overlock', sans-serif;
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: $bg;
+    font-family: $font;
+}

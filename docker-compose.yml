@@ -9,7 +9,7 @@ services:
     environment:
       WORDPRESS_DB_PASSWORD: example
     volumes:
-      - ./public:/var/www/html/wp-content/themes/roztocze
+      - ./roztocze:/var/www/html/wp-content/themes/roztocze
     depends_on:
       - mysql
   mysql:

@@ -1,1 +1,1 @@
-node-sass --include-path scss scss/style.scss public/css/style.css --output-style compressed
+node-sass --include-path scss scss/style.scss roztocze/css/style.css --output-style compressed

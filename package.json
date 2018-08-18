@@ -9,9 +9,9 @@
     "watch-css": "nodemon --watch css --exec npm run build-css",
     "build-js": "./bin/build-js",
     "watch-js": "nodemon --watch js --exec npm run build-js",
-    "build": "npm run build-css && npm run build-js && zip",
+    "build": "npm run build-css && npm run build-js",
     "watch": "npm run watch-css & npm run watch-js & npm start",
-    "zip": "cd public/ && zip -r ../roztocze.zip *"
+    "zip": "cd roztocze/ && zip -r ../roztocze.zip *"
   },
   "repository": {
     "type": "git",

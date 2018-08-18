@@ -1,9 +1,9 @@
 var bs = require('browser-sync').create()
 
 bs.init({
-    server: './public'
+    server: './roztocze'
 });
 
-bs.watch('public/*.html').on('change', bs.reload);
-bs.watch('public/css/*.css').on('change', bs.reload);
-bs.watch('public/js/*.js').on('change', bs.reload);
+bs.watch('roztocze/*.html').on('change', bs.reload);
+bs.watch('roztocze/css/*.css').on('change', bs.reload);
+bs.watch('roztocze/js/*.js').on('change', bs.reload);
