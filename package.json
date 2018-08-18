@@ -1,0 +1,33 @@
+{
+  "name": "roztocze",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/browsersync.js",
+    "build-css": "./bin/build-css",
+    "watch-css": "nodemon --watch css --exec npm run build-css",
+    "build-js": "./bin/build-js",
+    "watch-js": "nodemon --watch js --exec npm run build-js",
+    "build": "npm run build-css && npm run build-js && zip",
+    "watch": "npm run watch-css & npm run watch-js & npm start",
+    "zip": "cd public/ && zip -r ../roztocze.zip *"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:tsunday/roztocze.git"
+  },
+  "author": "Tomasz Niedziela-Brach",
+  "license": "ISC",
+  "homepage": "https://hejroztocze.pl",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babelify": "^8.0.0",
+    "browserify": "^15.2.0",
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "nodemon": "^1.18.3"
+  }
+}
